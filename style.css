@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height:100vh;
+    background-color: #021526;
+    color: white;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 8%;
+}
+.container .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+.row section .col{
+    display: flex;
+    flex-direction: column;
+}
+.col-right{
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+    margin-left: 50px;
+}
+.col-left{
+    flex-basis: 60%;
+}
+.col-left .container-Title h2{
+    position: relative;
+    font-size: 28px;
+    color: dodgerblue;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.col-left .container-Title h2::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120%;
+    left: 0;
+}
+.col-left .container-Title h2::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: dodgerblue;
+    top: calc(123% - 2px);
+    left: 0;
+}
+.col-left .container-Title p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+}
+.col-left .contact-Info{
+    margin-bottom: 16px;
+}
+.contact-Info .icon-Group{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.icon-Group .icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+.icon-Group .icon i{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icon-Group .destails span {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+}
+.icon-Group .destails span:nth-child(1){
+    text-transform: uppercase;
+    color: white;
+}
+.col-left .socialMedia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 22px 0px 20px;
+}
+.socialMedia a{
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    transition: 0.4s;
+}
+.socialMedia a i{
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    transition-delay: 0.4s;
+}
+.socialMedia a:hover{
+    transform: translateY(-5px);
+    background-color: #3b3b3b96;
+    color: #d6dde4;
+    border: 1px solid dodgerblue;
+}
+.socialMedia a:hover i{
+    color: dodgerblue;
+}
