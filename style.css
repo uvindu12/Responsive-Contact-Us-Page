@@ -6,22 +6,25 @@
 }
 body{
     width: 100%;
-    min-height:100vh;
-    background-color: #021526;
-    color: white;
+    background: url(image/background02.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .container{
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 30px 8%;
+    padding:50px 5%;
 }
 .container .row{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1100px;
+    max-width: 100%;
+    gap: 30px;
 }
 .row section .col{
     display: flex;
@@ -29,12 +32,16 @@ body{
 }
 .col-right{
     flex-basis: 35%;
-    min-width: 320px;
-    margin-right: 60px;
-    margin-left: 50px;
+    min-width: 40%;
 }
 .col-left{
-    flex-basis: 60%;
+    flex-basis: 50%;
+    border-radius: 10px;
+    border: 2px solid dodgerblue;
+    padding: 30px;
+    background-color: #48484860;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .col-left .container-Title h2{
     position: relative;
@@ -43,22 +50,14 @@ body{
     display: inline-block;
     margin-bottom: 25px;
 }
-.col-left .container-Title h2::before{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background-color: #ffffff;
-    top: 120%;
-    left: 0;
-}
+
 .col-left .container-Title h2::after{
     content: '';
     position: absolute;
     width: 25%;
     height: 4px;
     background-color: dodgerblue;
-    top: calc(123% - 2px);
+    top: calc(125% - 3px);
     left: 0;
 }
 .col-left .container-Title p{
@@ -94,7 +93,7 @@ body{
 }
 .icon-Group .destails span {
     display: block;
-    color: #ffffff;
+    color: white;
     font-size: 15px;
 }
 .icon-Group .destails span:nth-child(1){
@@ -127,7 +126,7 @@ body{
 }
 .socialMedia a:hover{
     transform: translateY(-5px);
-    background-color: #3b3b3b96;
+    background-color: #48484860;
     color: #d6dde4;
     border: 1px solid dodgerblue;
 }
@@ -138,40 +137,58 @@ body{
     border: 2px solid darkturquoise;
     border-radius: 10px;
     padding: 20px 0px;
-    max-width: 50%;
+    background-color: #48484860;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .message-from{
     margin: 20px;
 }
 .input-group label{
     font-size: 15px;
-    color: #ffffff;
-    margin-top: 10px;
+    color: white;
     font-weight: 600;
+    margin-left: 20px;
+    display: inline-block;
+    width: 150px;
 }
 .message-from .input-group{
     margin-top: 10px;
 }
-.input-group input ,.input-group textarea{
-    background-color: #021526;
-    border: 1.5px solid darkturquoise;
+.input-group input {
+    background-color: #ffffff00;
+    border: 2px solid darkturquoise;
     border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 30px;
     padding: 10px 80px;
+    display: inline-block;
+}
+.input-group textarea{
+    background-color: #ffffff00;
+    border: 2px solid darkturquoise;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
     margin-top: 10px;
     font-size: 12px;
+    margin-left: 30px;
+    padding: 10px 80px;
+    
 }
 .input-group button{
-    border: 1.5px solid darkturquoise;
+    border: 2px solid darkturquoise;
     padding: 8px 20px;
     border-radius: 10px;
-    background-color: #021526;
+    background-color: #ffffff00;
     color: white;
     margin-top: 30px;
     cursor: pointer;
     font-size: 15px;
+    margin-left: 20px;
 }
 .input-group button:hover {
-    border: 1.5px solid dodgerblue;
+    border: 2px solid dodgerblue;
     font-weight: 600;
 }
