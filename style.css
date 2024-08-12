@@ -134,3 +134,44 @@ body{
 .socialMedia a:hover i{
     color: dodgerblue;
 }
+.col-right{
+    border: 2px solid darkturquoise;
+    border-radius: 10px;
+    padding: 20px 0px;
+    max-width: 50%;
+}
+.message-from{
+    margin: 20px;
+}
+.input-group label{
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.message-from .input-group{
+    margin-top: 10px;
+}
+.input-group input ,.input-group textarea{
+    background-color: #021526;
+    border: 1.5px solid darkturquoise;
+    border-radius: 10px;
+    padding: 10px 80px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 12px;
+}
+.input-group button{
+    border: 1.5px solid darkturquoise;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #021526;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.input-group button:hover {
+    border: 1.5px solid dodgerblue;
+    font-weight: 600;
+}
