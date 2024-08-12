@@ -64,7 +64,6 @@ body{
     font-size: 15px;
     color: white;
     letter-spacing: 1px;
-    line-height: 1.2;
     padding-bottom: 22px;
 }
 .col-left .contact-Info{
@@ -152,15 +151,12 @@ body{
     display: inline-block;
     width: 150px;
 }
-.message-from .input-group{
-    margin-top: 10px;
-}
 .input-group input {
     background-color: #ffffff00;
     border: 2px solid darkturquoise;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 12px;
     margin-left: 30px;
     padding: 10px 80px;
@@ -191,4 +187,28 @@ body{
 .input-group button:hover {
     border: 2px solid dodgerblue;
     font-weight: 600;
+}
+.col-right h2{
+    position: relative;
+    font-size: 28px;
+    color: darkturquoise;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 30px;
+}
+.col-right p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+.col-right h2::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: darkturquoise;
+    top: calc(125% - 3px);
+    left: 0;
+    margin-left: 30px;
 }
